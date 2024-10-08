@@ -5,7 +5,7 @@
   "scripts": {
     "start:build": "tsc -w",
     "start:run": "nodemon build/server.js",
-    "start": "run-s start:build start:run",
+    "start": "run-p start:build start:run",
     "preview": "netlify dev --live",
     "lint": "eslint server/",
     "build": "tsc & netlify functions:build --src build",
