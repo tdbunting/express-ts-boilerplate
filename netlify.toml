@@ -1,0 +1,19 @@
+[build]
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18.7.0"
+  NPM_VERSION = "8.15.0"
+
+[context.staging]
+  # uncomment line if you want to run an integrations test on staging deploys
+  # command = "npm run test && npm run build"
+
+[context.staging.environment]
+  SERVER_ENV = "staging"
+  NODE_ENV = "development"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

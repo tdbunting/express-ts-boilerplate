@@ -1,0 +1,39 @@
+### OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### Node modules
+node_modules/
+package-lock.json
+
+### Logs
+*.log
+
+### Cypress
+cypress.env.json
+cypress/screenshots
+cypress/videos
+
+### local build files
+/build
+
+### local env files
+.env.local
+.env.*.local
+.env
+.env.staging
+.env.production
+
+### Netlify
+functions
+.netlify
+dist/*
+
+### Keys
+server/keys/*
+/certificates
